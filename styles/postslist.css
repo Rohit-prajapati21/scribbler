@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: #ffeedd;
+}
+#postList{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#post1 , #post2 , #post3 , #post4 , #post5{
+    display: flex;
+    font-size: 1rem;
+    width: 40%;
+    border-radius: 15px;
+    margin: 1%;
+    box-shadow: 0px 0px 10px  black;
+}
+#post1:hover , #post2:hover , #post3:hover , #post4:hover , #post5:hover{
+    box-shadow: 2px 5px 25px black;
+}
+#postBy{
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#postContent{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(237, 237, 237);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 2%;
+}
+#postContent-header{
+    font-size: 1.4rem;
+    color: rgb(157, 157, 157);
+    display: flex;
+    justify-content: space-between;
+}
+#dltIcon{
+    color: rgb(145, 145, 145);
+}
+#description1,#description2,#description3,#description4,#description5{
+    font-size: 2.6vh;
+    height: 9vh;
+    overflow: hidden;
+    margin-top: 2%;
+}
+#postContentFooter{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1%;
+}
+#menuIcon{
+    color: rgb(145, 145, 145);
+}
+#deletePostModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+#deletePost-content {
+    background-color: #fefefe;
+    margin: 18% auto; /* 5% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%; /* Could be more or less, depending on screen size */
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+#option{
+    width: 100%;
+    height: 30%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+#dlt{
+    border: none;
+    width: 25%;
+    color: white;
+    background-color: rgb(18, 184, 18);
+}
+#notDlt{
+    border: none;
+    width: 25%;
+    color: white;
+    background-color: rgb(202, 24, 24);
+}

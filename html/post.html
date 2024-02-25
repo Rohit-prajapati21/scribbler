@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/common.css">
+    <link rel="stylesheet" href="/styles/post.css">
+    <script src="https://kit.fontawesome.com/a48953f075.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- TODO: Include code for header here -->
+    <header>
+        <div>
+          <a href="/index.html"><h1 id="proName">ScriBBler</h1></a>
+            <p id="proBio">Explore, Imagine, Create</p>
+        </div>
+        <div id="btnMenu">
+            <button type="button" id="signUpBtn">Sign Up</button>
+            <button type="button" id="signInBtn">Sign In</button>
+        </div>
+    </header>
+    <!-- The Modal -->
+<div id="signUpModal">
+
+    <!-- Modal content -->
+    <div id="signUpModal-content">
+      <section id="signUpForm-top">
+      <p>Get Started</p>
+      <span id="signUpModal-close">&times;</span>
+      </section><hr>
+      <form id="signUpForm" name="signUp">
+          <label>Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+          <label>Username</label>
+          <input type="text" id="" placeholder="Enter your username" required >
+          <label>Password</label>
+          <input type="password" id="" placeholder="Enter your password"required >
+          <label>Confirm Password</label>
+          <input type="password" id="" placeholder="Re-enter your password "required>
+          <button type="submit" id="signUpBtn" onclick="getData()">Sign Up</button>
+      </form>
+    </div>
+  </div>
+  <!-- The Modal -->
+  <div id="signInModal">
+  
+    <!-- Modal content -->
+    <div id="signInModal-content">
+      <section id="signInForm-top">
+      <p>Get Started</p>
+      <span id="signInModal-close">&times;</span>
+      </section><hr>
+      <form id="signInForm">
+          <label>Username</label>
+          <input type="text" id="" placeholder="Enter your username" required>
+          <label>Password</label>
+          <input type="password" id="" placeholder="Enter your password" required>
+          <button type="submit" id="signInBtn">Sign In</button>
+      </form>
+      <section id="signInFormFooter">
+        <h4>Not a member?<span onclick="showSignUp()" id="refSignUp">Sign Up</span></h4>
+      </section>
+    </div>
+  </div>
+    <section id="title"></section>
+    <div id="container">
+    <div id="header">
+      <div id="userName"></div>
+      <button type="button" id="editBtn" onclick="edit()">Edit<i class="fa-solid fa-pen-to-square" id="editIcon"></i></button>
+    </div>
+    <section id="content"></section>
+    <button type="button" id="likeBtn" onclick="like()"><i class="fa-solid fa-thumbs-up" id="likeIcon"></i>Like</button>
+    <p id="likePrompt">Be the first one to like this!</p>
+    <textarea id="commentBox" placeholder="Leave Your Comment..."></textarea>
+    <button type="button" id="cmntBtn" onclick="cmntStore()">Comment</button>
+    <p id="cmntPromt">All Comments</p>
+    <section id="cmntList"></section>
+    </div>
+</body>
+<script src="/scripts/common.js"></script>
+<script src="/scripts/post.js"></script>
+</html>

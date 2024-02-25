@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Montez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3em;
+    height: 10%;
+}
+#projectTitle{
+    width: 50%;
+}
+#proName{
+    font-family: 'Montez',cursive;
+    color: blue;
+    font-weight: 300;
+    font-size: 2.2rem;
+}
+#proBio{
+    font-weight: 200;
+    font-family: 'Ubuntu Mono';
+}
+#btnMenu{
+    display: flex;
+    justify-content: flex-end;
+    gap: 4%;
+    width: 50%;
+}
+#btnMenu button{
+    background-color: rgb(67, 67, 255);
+    color: white;
+    text-align: center;
+    height: 65%;
+    width: 100px;
+    font-size: small;
+    border: 1px solid rgb(184, 182, 182);
+    border: outset;
+    font-size: 1vw;
+    margin: 0;
+}
+#signUpModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+#signUpModal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 5% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+#signUpModal-close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+#signUpModal-close:hover,
+#signUpModal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+#signUpForm-top{
+    display: flex;
+    justify-content: space-between;
+}
+#signUpForm-top{
+    color: #aaa;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+#signUpForm{
+    display: flex;
+    flex-direction: column;
+}
+#signUpForm label{
+    margin-top: 4%;
+}
+#signUpForm input{
+    border-style: none;
+    background-color: #cdcdcd;
+    padding: 0.6em;
+    margin-top: 2%;
+    font-size: 1rem;
+}
+#signUpForm input:focus{
+    outline: none;
+}
+input::placeholder{
+    font-size: 0.8rem;
+}
+#signUpBtn{
+    background-color: chartreuse;
+    border: none;
+    margin-top: 8%;
+    height: 6vh;
+    width: 100%;
+}
+/* modal............ */
+/* The Modal (background) */
+#signInModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+#signInModal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 5% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+#signInModal-close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+#signInModal-close:hover,
+#signInModal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+#signInForm-top{
+    display: flex;
+    justify-content: space-between;
+}
+#signInForm-top p{
+    color: #aaa;
+    font-size: 1.6rem;
+    font-weight: lighter;
+}
+#signInForm{
+    display: flex;
+    flex-direction: column;
+}
+#signInForm label{
+    margin-top: 4%;
+}
+#signInForm input{
+    border-style: none;
+    background-color: #cdcdcd;
+    padding: 0.6em;
+    margin-top: 2%;
+    font-size: 1rem;
+}
+#signInForm input:focus{
+    outline: none;
+}
+#signInBtn{
+    background-color: chartreuse;
+    border: none;
+    margin-top: 8%;
+    height: 6vh;
+    width: 100%;
+}
+#signInFormFooter{
+    margin-top: 4%;
+    text-align: center;
+}
+#signInFormFooter span{
+    color: rgb(1, 151, 210) ;
+}
+#signInBtn{
+    background-color: chartreuse;
+    border: none;
+    margin-top: 8%;
+    height: 6vh;
+}
+#refSignUp{
+    cursor: pointer;
+}

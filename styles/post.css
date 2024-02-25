@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Montez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+*{
+    margin: 0;
+}
+body{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+#title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    width: 100%;
+    word-break: break-all;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 95%;
+    height: 100%;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+#userName{
+    font-family: 'Ubuntu Mono';
+}
+#editBtn{
+    font-size: 1vw;
+    width: 8%;
+    padding: 0.5%;
+    background-color: rgb(255, 18, 18);
+    color: white;
+    box-shadow: 0 2px 4px 0 #ed2553, 0 3px 10px 0 #ed2553;
+    border: none;
+}
+#editIcon{
+    margin-left:10%;
+}
+#content{
+    margin-top: 3%;
+    font-size: 0.9vw;
+    word-break: break-all;
+}
+#likeIcon{
+    margin-right:10%;
+}
+#likeBtn,#cmntBtn{
+    font-size: 1vw;
+    width: 8%;
+    padding: 0.5%;
+    margin-top: 1%;
+    background-color: rgb(255, 18, 18);
+    color: white;
+    border: none;
+    box-shadow: 0 2px 4px 0 #ed2553, 0 3px 10px 0 #ed2553;
+}
+#likePrompt{
+    margin-top: 1%;
+}
+#commentBox{
+    width: 60%;
+    height: 20vh;
+    margin-top: 1%;
+}
+#cmntContent{
+    margin-top: 1%;
+    border-top: 1vw solid rgb(228, 227, 227);
+    border-bottom: 1vw solid rgb(228, 227, 227);
+    border-left: 0.6vw solid rgb(228, 227, 227);
+    border-right: 0.6vw solid rgb(228, 227, 227);
+    width: 70%;
+}
+#cmntPromt{
+    margin-top: 1.5%;
+    font-weight: 600;
+    font-family: 'Ubuntu Mono';
+}
+#editingTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid orangered;
+    font-weight: bold;
+    word-break: break-all;
+}
+#editingContent{
+    margin-top: 3%;
+    word-break: break-all;
+    border: 1px solid orangered;
+}
